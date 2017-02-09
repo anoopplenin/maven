@@ -19,7 +19,7 @@
 
 properties([buildDiscarder(logRotator(artifactNumToKeepStr: '5', numToKeepStr: env.BRANCH_NAME=='master'?'10':'5'))])
 
-def itBranch='MNG-6109'
+def itBranch='master'
 
 try {
 node('ubuntu') {
